@@ -1,0 +1,9 @@
+##############################################
+# Spring Boot - Production Configuration
+##############################################
+sicatel:
+   authorities: 0
+   resttemplate:
+      timeout: 5000
+   authorization:
+      endpoint:

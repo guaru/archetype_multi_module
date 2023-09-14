@@ -1,0 +1,33 @@
+##############################################
+# Spring Boot - Configuration
+##############################################
+spring:
+   application:
+      name: "${rootArtifactId}-api"
+   profiles:
+      active: "dev"
+      group:
+         dev:  "dev, logging"
+         prod: "prod, logging"
+   output:
+      ansi:
+         enabled: ALWAYS
+   main:
+      allow-bean-definition-overriding: true
+   mvc:
+      throw-exception-if-no-handler-found: true
+   web:
+      resources:
+         add-mappings: false
+      
+      
+########################################
+# Settings for application server 
+########################################
+server:
+   port: 9090
+   servlet:
+      context-path: /${rootArtifactId}-api
+
+sicatel:
+   version: 1.0.0

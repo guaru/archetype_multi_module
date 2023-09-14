@@ -1,0 +1,11 @@
+##############################################
+# Spring Boot - test Configuration
+##############################################
+sicatel:
+   authorities: 65
+   resttemplate:
+      timeout: 5000
+   authorization:
+      endpoint: http://localhost:9090/sicatel-authentication-api/v1/auth/validate-token
+ws:
+ consumer.version: 1.0.0

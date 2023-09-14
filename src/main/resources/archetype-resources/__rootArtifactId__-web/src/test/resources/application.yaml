@@ -1,0 +1,18 @@
+##############################################
+# Spring Boot - Configuration
+##############################################
+spring:
+   application:
+      name: "${rootArtifactId}-api"
+   profiles:
+      active: "test"
+      group:
+         test:  "test"
+
+server:
+   port: 9090
+   servlet:
+      context-path: /${rootArtifactId}-api
+sicatel:
+   version: 1.0.0
+ws.corp.actor: ${rootArtifactId}-api
