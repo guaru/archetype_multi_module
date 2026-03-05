@@ -1,1 +1,1 @@
-Arquetipo para generar Microservicios con estructira definida
+Arquetipo para generar Microservicios con estructura definida
